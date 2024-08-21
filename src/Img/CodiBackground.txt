@@ -1,0 +1,46 @@
+package View;
+
+//import Model.modelLogin;
+import java.awt.Image;
+import java.io.File;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+/**
+ *
+ * @author ANTONIO MILTON
+ */
+public class vwLogin {
+
+
+
+    private final JLabel background;
+
+    public vwLogin() {
+        JFrame frame = new JFrame("Login");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(800, 500);
+
+        JPanel panel = new JPanel();
+        panel.setLayout(null); // Você pode querer usar um layout manager mais tarde
+        ImageIcon img = new ImageIcon("D:\\Java\\2024\\SGVendas\\src\\Img\\8274477_3838352.jpg"); // Substitua "caminho_da_sua_imagem.jpeg" pelo caminho real da sua imagem
+
+        background = new JLabel("", img, JLabel.LEFT);
+        background.setBounds(0, 0, 800, 500); // Ajuste as dimensões conforme necessário para cobrir a tela
+        panel.add(background);
+
+        frame.add(panel);
+        frame.setVisible(true);
+    }
+
+    public static void main(String args[]) {
+        new vwLogin();
+    }}
+
+
+    
+    
+   
